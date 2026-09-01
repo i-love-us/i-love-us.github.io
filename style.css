@@ -9,11 +9,12 @@ h1 {
     margin-bottom: 0;
 }
 
-.device-box {
+/* .device-box {
     border: 5px solid aqua;
-}
+} */
+
 .device {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     position: relative;
 }
 
