@@ -80,6 +80,15 @@ h1 {
         aspect-ratio: 4 / 3; 
         z-index: 3;
     }
+
+    .remote-box a::after {
+        content: " - " attr(data-desc);
+        font-size: 0.90rem;
+        font-weight: normal;
+        font-style: italic;
+        color: #e0e0e0; /* lighter than the label so it reads as secondary */
+        margin-top: 2px;
+    }
 }
 
 @media (min-width: 546px) {
