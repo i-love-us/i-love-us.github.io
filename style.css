@@ -11,15 +11,35 @@ body {
     position: relative;
 }
 
-.screen-box {
-    border: 5px solid greenyellow;
-    position: absolute;
-    top: 22%;      /* tune these 4 to match where the "screen" */
-    left: 15%;     /* actually sits inside your SVG artwork    */
-    width: 70%;
-    aspect-ratio: 4 / 3;  /* locks width:height ratio as it scales */
+.device picture {
+    position: relative;
+    z-index: 2;   /* image renders on top */
+    pointer-events: none;
+
 }
 
+.screen-box {
+    /* border: 5px solid greenyellow; */
+    position: absolute;
+    top: 16%;      /* tune these 4 to match where the "screen" */
+    left: 4%;     /* actually sits inside your SVG artwork    */
+    width: 74%;
+    aspect-ratio: 4 / 3;  /* locks width:height ratio as it scales */
+    z-index: 1;   /* iframe sits behind the frame artwork */
+
+}
+
+@media (max-width: 500px) {
+    .screen-box {
+        top: 7%;
+        left: 15%;
+        width: 71%;
+        aspect-ratio: 4 / 3; 
+        z-index: 3;
+    }
+}
 .screen {
-     border: 15px solid purple;
+     /* border: 15px solid purple; */
+     width: 100%;
+     aspect-ratio: 4/3;
 }
