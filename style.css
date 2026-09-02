@@ -82,22 +82,6 @@ h1 {
     padding: 0;
 }
 
-.btn-back {
-    /* border: 5px solid rgb(159, 57, 242); */
-    top: 69%;   /* placeholder — tune to match your iPod artwork */
-    left: 30%;
-    width: 10%;
-    aspect-ratio: 1/1;
-}
-
-.btn-forward {
-    /* border: 5px solid rgb(242, 57, 187); */
-    top: 69%;
-    right: 28%;
-    width: 10%;
-    aspect-ratio: 1/1;
-}
-
 @media (max-width: 545px) {
     .screen-box {
         top: 7%;
@@ -114,6 +98,30 @@ h1 {
         font-style: italic;
         color: #e0e0e0; /* lighter than the label so it reads as secondary */
         margin-top: 2px;
+    }
+
+    .btn-back {
+        /* border: 5px solid rgb(159, 57, 242); */
+        top: 69%;   /* placeholder — tune to match your iPod artwork */
+        left: 30%;
+        width: 10%;
+        aspect-ratio: 1/1;
+    }
+
+    .btn-down {
+        /* border: 5px solid rgb(242, 57, 187); */
+        top: 83%;
+        right: 43%;
+        width: 12%;
+        aspect-ratio: 1/1;
+    }
+
+    .btn-forward {
+        /* border: 5px solid rgb(242, 57, 187); */
+        top: 69%;
+        right: 28%;
+        width: 10%;
+        aspect-ratio: 1/1;
     }
 }
 
