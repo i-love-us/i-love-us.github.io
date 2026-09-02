@@ -72,6 +72,32 @@ h1 {
     background-color: #a6a6a6; /* light gray */
 }
 
+.remote-btn {
+    /* border: 5px solid rgb(255, 191, 0); */
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 4; /* above the picture's z-index:2, so it's clickable */
+    padding: 0;
+}
+
+.btn-back {
+    /* border: 5px solid rgb(159, 57, 242); */
+    top: 69%;   /* placeholder — tune to match your iPod artwork */
+    left: 30%;
+    width: 10%;
+    aspect-ratio: 1/1;
+}
+
+.btn-forward {
+    /* border: 5px solid rgb(242, 57, 187); */
+    top: 69%;
+    right: 28%;
+    width: 10%;
+    aspect-ratio: 1/1;
+}
+
 @media (max-width: 545px) {
     .screen-box {
         top: 7%;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">  
+    <script src="script.js" defer></script>
     <title>News Channel Aggregate</title>
 </head> 
 <body>
@@ -14,17 +15,23 @@
         </p>
         <div class="device-box">
             <div class="device">
-            <picture >
-                <source srcset="assets/3G_Nano_iPod.svg" media="(max-width:545px)">
-                <source srcset="assets/old-tv-television-empty-screen-2.png">
-                <img src="assets/3G_Nano_iPod.svg" alt="IPod" style="width:100%;">
-            </picture>
+                <picture >
+                    <source srcset="assets/3G_Nano_iPod.svg" media="(max-width:545px)">
+                    <source srcset="assets/old-tv-television-empty-screen-2.png">
+                    <img src="assets/3G_Nano_iPod.svg" alt="IPod" style="width:100%;">
+                </picture>
                 <div class="screen-box">
-                    <iframe name="iframe-screen" class="screen" 
-                        src="https://www.youtube.com/embed/gCNeDWCI0vo?si=8JExTpSWaOcD4cBr&autoplay=1" 
-                        allow="accelerometer; autoplay; picture-in-picture;" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen></iframe>
+                        <iframe name="iframe-screen" class="screen" 
+                            src="https://www.youtube.com/embed/gCNeDWCI0vo?si=8JExTpSWaOcD4cBr&autoplay=1" 
+                            allow="accelerometer; autoplay; picture-in-picture;" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen></iframe>
+                </div>
+                <div>
+                    <button class="remote-btn btn-back" aria-label="Previous channel"></button>
+                </div>
+                <div>
+                    <button class="remote-btn btn-forward" aria-label="Next channel"></button>
                 </div>
             </div>
             <div class="remote-box">
@@ -37,7 +44,7 @@
                     <li><a target="iframe-screen" href="https://www.youtube.com/embed/iipR5yUp36o?si=7_BfOvSU9_daTWKo&autoplay=1" data-desc="US network news coverage">ABC</a></li>
                     <li><a target="iframe-screen" href="https://www.youtube.com/embed/Y4WnJg78JIk?si=mh2Q00lIhpmS64kA&autoplay=1" data-desc="US network news coverage">CBS</a></li>
                     <li><a target="iframe-screen" href="https://www.youtube.com/embed/QB5BNdBFujE?si=Tu1h7jwSMoBuNy9X&autoplay=1" data-desc="Bloomberg financial news and market analysis">Bloomberg TV</a></li> 
-                    <li><a target="iframe-screen" href="https://www.youtube.com/embed/vYRfQo6JMxc?si=qDxpGUo8mOE6e2XO&autoplay=1" data-desc="United Nations official global channel.">UN TV</a></li>
+                    <li><a target="iframe-screen" href="https://www.youtube.com/embed/vYRfQo6JMxc?si=qDxpGUo8mOE6e2XO&autoplay=1" data-desc="United Nations official global channel">UN TV</a></li>
                     <!-- <li><a target="iframe-screen" href="&autoplay=1"></a></li>                 -->
                 </ul>
             </div>
